@@ -1,0 +1,65 @@
+{
+    "categories": [
+      {
+        "name": "Pants",
+        "products": [
+          {
+            "image": "https://splendid.com/products/splendid-x-cella-jane-wide-leg-sweater-pant",
+            "title": "Wide Leg Sweater Pant",
+            "price": 128.00
+          },
+          {
+            "image": "https://www.gettyimages.com/photos/sweater-shoes?page=2",
+            "title": "Classic Cargo Pants",
+            "price": 85.00
+          },
+          {
+            "image": "https://www.pinterest.com/pin/all-light-gray-and-white-sneaks-black-bag--79516749651309964/",
+            "title": "Slim Fit Chinos",
+            "price": 60.00
+          }
+        ]
+      },
+      {
+        "name": "Sweaters",
+        "products": [
+          {
+            "image": "https://people.com/martha-stewart-lightweight-sweater-amazon-march-2025-11696621",
+            "title": "Lightweight Beige Sweater",
+            "price": 40.00
+          },
+          {
+            "image": "https://www.gettyimages.com/photos/sweater-shoes?page=2",
+            "title": "Oversized Knit Sweater",
+            "price": 75.00
+          },
+          {
+            "image": "https://www.pinterest.com/pin/outfit--68746913461/",
+            "title": "Turtleneck Pullover",
+            "price": 55.00
+          }
+        ]
+      },
+      {
+        "name": "Shoes",
+        "products": [
+          {
+            "image": "https://unsplash.com/s/photos/shoes",
+            "title": "Classic White Sneakers",
+            "price": 65.00
+          },
+          {
+            "image": "https://www.gettyimages.com/photos/sweater-shoes?page=2",
+            "title": "Black Leather Loafers",
+            "price": 90.00
+          },
+          {
+            "image": "https://www.pinterest.com/pin/all-light-gray-and-white-sneaks-black-bag--79516749651309964/",
+            "title": "Ankle Strap Heels",
+            "price": 120.00
+          }
+        ]
+      }
+    ]
+  }
+  
