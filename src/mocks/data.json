@@ -4,39 +4,29 @@
         "name": "Pants",
         "products": [
           {
-            "image": "https://splendid.com/cdn/shop/files/web_FA24_CJ_RW3S48RSE_TOA_1.progressive.jpg?v=1725395162",
-            "title": "Wide Leg Sweater Pant",
+            "image": "https://images.pexels.com/photos/65676/nanjing-studio-jeans-65676.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&dpr=1",
+            "title": "Comfy Black Pant",
             "price": 128.00
           },
           {
-            "image": "https://www.gettyimages.com/photos/sweater-shoes?page=2",
-            "title": "Classic Cargo Pants",
+            "image": "https://images.pexels.com/photos/1082528/pexels-photo-1082528.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1",
+            "title": "Classic Jeans",
             "price": 85.00
-          },
-          {
-            "image": "https://www.pinterest.com/pin/all-light-gray-and-white-sneaks-black-bag--79516749651309964/",
-            "title": "Slim Fit Chinos",
-            "price": 60.00
           }
         ]
       },
       {
-        "name": "Sweaters",
+        "name": "T-shirts",
         "products": [
           {
-            "image": "https://people.com/martha-stewart-lightweight-sweater-amazon-march-2025-11696621",
-            "title": "Lightweight Beige Sweater",
-            "price": 40.00
+            "image": "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1",
+            "title": "Black T-Shirt",
+            "price": 30.00
           },
           {
-            "image": "https://www.gettyimages.com/photos/sweater-shoes?page=2",
-            "title": "Oversized Knit Sweater",
-            "price": 75.00
-          },
-          {
-            "image": "https://www.pinterest.com/pin/outfit--68746913461/",
-            "title": "Turtleneck Pullover",
-            "price": 55.00
+            "image": "https://images.pexels.com/photos/11671964/pexels-photo-11671964.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1",
+            "title": "White T-shirt",
+            "price": 20.00
           }
         ]
       },
@@ -44,19 +34,19 @@
         "name": "Shoes",
         "products": [
           {
-            "image": "https://unsplash.com/s/photos/shoes",
-            "title": "Classic White Sneakers",
-            "price": 65.00
+            "image": "https://images.pexels.com/photos/1124466/pexels-photo-1124466.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1",
+            "title": "Running shoes",
+            "price": 120.00
           },
           {
-            "image": "https://www.gettyimages.com/photos/sweater-shoes?page=2",
-            "title": "Black Leather Loafers",
+            "image": "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1",
+            "title": "Nike 'Special Edition' shoes",
             "price": 90.00
           },
           {
-            "image": "https://www.pinterest.com/pin/all-light-gray-and-white-sneaks-black-bag--79516749651309964/",
-            "title": "Ankle Strap Heels",
-            "price": 120.00
+            "image": "https://images.pexels.com/photos/1240892/pexels-photo-1240892.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1",
+            "title": "Red Converse",
+            "price": 80.00
           }
         ]
       }

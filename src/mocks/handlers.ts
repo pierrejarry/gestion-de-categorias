@@ -8,7 +8,7 @@ export const handlers = [
     }),
 
     http.get('*', ({ request }) => {
-        if (request.url.includes('/img/')) {
+        if (request.url.includes('pexels')) {
             return; 
         }
     
