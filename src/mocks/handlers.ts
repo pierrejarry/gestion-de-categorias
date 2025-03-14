@@ -8,7 +8,7 @@ export const handlers = [
     }),
 
     http.get('*', ({ request }) => {
-        if (request.url.includes('pexels')) {
+        if (request.url.includes('pexels') || request.url.includes('fonts')) {
             return; 
         }
     

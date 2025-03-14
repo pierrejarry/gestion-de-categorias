@@ -2,15 +2,15 @@ import { useState } from "react";
 import { Category } from "../../types/types"
 import ProductItem from "../product/ProductItem";
 import { AlignLeft, AlignCenter, AlignRight } from "lucide-react";
+import { Alignment } from "../../types/types";
 import './CategoryItem.css'
-
-type Alignment = 'left' | 'center' | 'right';
 
 function CategoryItem({ category }: { category: Category }) {
   const { name, products } = category;
   const [alignment, setAlignment] = useState<Alignment>('left');
   const iconSize = 16;
-  const renderProducts = products.map((p, i) => <ProductItem product={p} key={i} />);
+
+  const renderProducts = products.map((p, i) => <ProductItem product={p} key={`product-${p.title}-${i}`} />);
 
   return (
     <article className="category">
