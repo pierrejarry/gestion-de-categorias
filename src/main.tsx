@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import { ProductsProvider } from './context/productsContext.tsx'
 import App from './App.tsx'
+import './index.css'
 
 let workerStartPromise: Promise<void> | null = null;
 
@@ -18,6 +19,8 @@ export { workerStartPromise };
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <ProductsProvider>
+      <App />
+    </ProductsProvider>
   </StrictMode>
 )

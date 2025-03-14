@@ -1,11 +1,11 @@
 import { useEffect, useState, useTransition } from "react"
-import { Category } from "../types/types";
 import { workerStartPromise } from "../main";
+import { useProducts } from "../context/productsContext";
 
 function useCategories() {
     const [isPending, startTransition] = useTransition();
-    const [categories, setCategories] = useState<Category[]>([]);
     const [fetchError, setFetchError] = useState<string | null>(null);
+    const { categories, setCategories } = useProducts();
 
     useEffect(() => {
         const fetchCategories = () => {
