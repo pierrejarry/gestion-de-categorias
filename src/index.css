@@ -26,7 +26,24 @@ ul {
 }
 
 button {
+  align-items: center;
   border: none;
+  border-radius: 1rem;
   background: none;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  gap: .5rem;
   padding: .5rem;
+
+  &.primary {
+    background-color: #222;
+    color: white;
+    padding: .5rem 1rem;
+  }
+
+  &.secondary {
+    border: 1px solid #ccc;
+    padding: .5rem 1rem;
+  }
 }

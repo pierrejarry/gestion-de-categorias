@@ -6,12 +6,13 @@ import { Alignment } from "../../types/types";
 import './CategoryItem.css'
 import { useDrop } from "react-dnd";
 import { useProducts } from "../../context/productsContext";
+import { CirclePlus } from "lucide-react";
 
 export const ItemType = 'PRODUCT';
 
 function CategoryItem({ category }: { category: Category }) {
   const { name, products } = category;
-  const { setCategories } = useProducts();
+  const { setCategories, setAddProductPopup } = useProducts();
   const [alignment, setAlignment] = useState<Alignment>('left');
   const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
   const ulRef = useRef<HTMLUListElement>(null);
@@ -94,24 +95,37 @@ function CategoryItem({ category }: { category: Category }) {
           <button
             onClick={() => setAlignment('left')}
             title="Align Left"
+            className={alignment === 'left' ? 'selected' : ''}
           >
             <AlignLeft size={iconSize} />
           </button>
           <button
             onClick={() => setAlignment('center')}
             title="Align Center"
+            className={alignment === 'center' ? 'selected' : ''}
           >
             <AlignCenter size={iconSize} />
           </button>
           <button
             onClick={() => setAlignment('right')}
             title="Align Right"
+            className={alignment === 'right' ? 'selected' : ''}
           >
             <AlignRight size={iconSize} />
           </button>
         </div>
       </div>
-      <ul ref={ulRef} className={alignment}>{renderProducts}</ul>
+      <ul ref={ulRef} className={alignment}>
+        {renderProducts}
+        {products.length < 3 && 
+          <li className="add-product">
+            <button onClick={() => setAddProductPopup(name)}>
+            <CirclePlus />
+            Add product
+            </button>
+          </li>
+        }
+      </ul>
     </article>
   )
 }
