@@ -12,4 +12,21 @@
     .price {
         font-weight: 600;
     }
+
+    .text-container {
+        position: relative;
+
+        .remove-item {
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: .25s all;
+
+            &:hover {
+                color: #d63031;
+            }
+        }
+    }
+
 }

@@ -1,11 +1,20 @@
 import { Product } from "../../types/types"
-import './ProductItem.css'
 import { useDrag } from "react-dnd";
 import { useRef } from "react";
 import { ItemType } from "../category/CategoryItem";
+import { Trash2 } from "lucide-react";
+import useDeleteProduct from "../../hooks/useDeleteProduct";
+import './ProductItem.css'
 
-function ProductItem({ product }: { product: Product }) {
+interface ProductItemProps {
+  product: Product;
+  name: string
+}
+
+function ProductItem({ product, name }: ProductItemProps) {
   const { image, title, price } = product;
+  const { removeProduct, isPending } = useDeleteProduct();
+
   const liRef = useRef<HTMLLIElement>(null);
 
   /* Dragging part */
@@ -29,9 +38,19 @@ function ProductItem({ product }: { product: Product }) {
       }}
     >
       <img src={image} alt={title} />
-      <p className="title">{title}</p>
-      <p className="price">{price} &euro;</p>
-    </li>
+      <div className="text-container">
+        <p className="title">{title}</p>
+        <p className="price">{price} &euro;</p>
+        <button
+          className="remove-item"
+          onClick={() => removeProduct(name, title)}
+          title="Remove Item"
+          disabled={isPending}
+        >
+          <Trash2 />
+        </button>
+      </div>
+    </li >
   );
 }
 

@@ -30,7 +30,7 @@ function CategoryItem({ category }: { category: Category }) {
           }}
         ></li>
       )}
-      <ProductItem product={p} />
+      <ProductItem product={p} name={name} />
     </React.Fragment>
   ));
 
