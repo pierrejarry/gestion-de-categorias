@@ -13,6 +13,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #74b9ff;
+  --body-color: #222;
+  --light-gray: #888;
+  --border-color: #ccc;
 }
 
 *, *:before, *:after {
@@ -25,25 +30,43 @@ ul {
   list-style: none;
 }
 
+/* Form */ 
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
 button {
   align-items: center;
   border: none;
-  border-radius: 1rem;
+  border-radius: 5rem;
   background: none;
   cursor: pointer;
   display: flex;
   font-size: 1rem;
   gap: .5rem;
   padding: .5rem;
+  transition: .5s all;
 
   &.primary {
-    background-color: #222;
+    background-color: var(--body-color);
     color: white;
     padding: .5rem 1rem;
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
   }
 
   &.secondary {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     padding: .5rem 1rem;
+
+    &:hover {
+      border-color: var(--body-color);
+    }
   }
 }

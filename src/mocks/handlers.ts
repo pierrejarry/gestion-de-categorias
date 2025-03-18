@@ -44,6 +44,31 @@ export const handlers = [
         return HttpResponse.json({ message: 'Product added successfully', categories });
     }),
 
+    http.post('/categories', async ({ request }) => {
+        try {
+            const newCategory = await request.json() as Category;
+
+            if (!newCategory.name) {
+                return HttpResponse.json({ message: 'Category name is required' }, { status: 400 });
+            }
+
+            if (categories.some(category => category.name === newCategory.name)) {
+                return HttpResponse.json({ message: 'Category already exists' }, { status: 400 });
+            }
+
+            const newCategoryObject: Category = {
+                name: newCategory.name.trim(),
+                products: []
+            };
+
+            categories = [...categories, newCategoryObject];
+
+            return HttpResponse.json({ message: 'Category added successfully', categories });
+        } catch (error) {
+            return HttpResponse.json({ message: 'Invalid request body' }, { status: 400 });
+        }
+    }),
+
     http.get('*', ({ request }) => {
         if (request.url.includes('pexels') || request.url.includes('fonts')) {
             return;

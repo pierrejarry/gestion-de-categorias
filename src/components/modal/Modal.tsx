@@ -46,8 +46,6 @@ function Modal() {
 
                 <form action={() => addProduct(addProductPopup, newProduct)}>
                     <fieldset>
-                        <legend>Product Details</legend>
-
                         {/* Image Upload */}
                         <div className="input-group file-input">
                             <label htmlFor="file-input">Product Image</label>

@@ -59,10 +59,6 @@
             justify-content: center;
             padding: 1rem;
             transition: .5s all;
-
-            &:hover {
-                background-color: #f4f4f4;
-            }
         }
     }
 }
