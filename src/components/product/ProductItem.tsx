@@ -1,9 +1,9 @@
 import { Product } from "../../types/types"
 import { useDrag } from "react-dnd";
 import { useRef } from "react";
-import { ItemType } from "../category/CategoryItem";
 import { Trash2 } from "lucide-react";
 import useDeleteProduct from "../../hooks/useDeleteProduct";
+import { ItemType } from "../../hooks/useProductDrop";
 import './ProductItem.css'
 
 interface ProductItemProps {

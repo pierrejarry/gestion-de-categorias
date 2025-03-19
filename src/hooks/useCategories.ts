@@ -34,6 +34,7 @@ function useCategories() {
     return {
         isPending,
         categories,
+        setCategories,
         fetchError
     }
 }

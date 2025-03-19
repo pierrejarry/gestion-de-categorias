@@ -1,0 +1,13 @@
+.zoom-section {
+    padding: 1rem;
+
+    .zoom {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+
+        button:hover {
+            color: var(--primary-color);
+        }
+    }
+}
